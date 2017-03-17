@@ -1,0 +1,218 @@
+Unpacked struct dumping is enabled.
+ModelSim for Questa-64 6.6g 2012.05
+Linux 3.0.101-88-default #1 SMP Fri Nov 4 22:07:35 UTC 2016 (b45f205) x86_64
+CPU cores: 2
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		unlimited
+coredumpsize	1 kbytes
+memoryuse		6842752 kbytes
+vmemoryuse		7279120 kbytes
+descriptors		1024
+memorylocked	64 kbytes
+maxproc			62769
+======================================
+Runtime environment variables:
+VMW_HOME=/pkg/qct/software/mentor/veloce/Veloce_v1.5.0.19
+__QVMR_TESTCASE_TYPE=ovm_or_uvm
+INCISIV_VERSION=incisiv11.10.018
+unmanaged=/usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged
+LESSKEY=/etc/lesskey.bin
+INFODIR=/usr/local/info:/usr/share/info:/usr/info
+ORBIT_SOCKETDIR=/tmp/orbit-xiaoshao
+MANPATH=/usr/share/man:/usr/local/man:/usr/local/share/man:/opt/quest/man:/usr/man:/usr/X11R6/man:/pkg/icetools/man:/pkg/iceng/lsf/cur_rel/man:/pkg/hwtools/man:/pkg/gnu/man:/pkg/ispell/man:/pkg/qcaetools/syseng/man:/prj/vlsi/tools/man:/usr/atria/doc/man
+NNTPSERVER=news.qualcomm.com
+WAVES_FSDB_SCOPE=/
+HOSTNAME=vl-xiaoshao-gridsdcb.qualcomm.com
+SAVE_SIM_COVERAGE=1
+XKEYSYMDB=/usr/share/X11/XKeysymDB
+NOVAS_HOME=/pkg/qct/software/novas/2012.07
+SVA_COVERAGE=1
+TERM=xterm
+MATLABPATH=/pkg/qcaetools/syseng
+__QBAR_SESSION_DATA= ****************************************************\n * SESSION INFO\n ****************************************************\n * QVMR: 2.10.2\n * Flow: tbx\n * Goals: sim\n * Flags: SIM_MODE=gui WAVES=fsdb WAVES_DUMP_ON=1 WAVES_FSDB_DUMP_MDA=1\n * Platform: LINUX64\n * Host: vl-xiaoshao-gridsdcb\n * Process ID: 104077\n * Makefile: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr/Makefile\n * Session started: Thu Mar 16 17:29:17 PDT 2017\n * Host Uptime:  17:29pm  up 13 days  5:18,  2 users,  load average: 0.14, 0.14, 0.19\n ****************************************************\n * TOOL INFO\n ****************************************************\n * Modelsim: 6.6g ($MODELTECH_VERSION)\n * Novas: 2012.07 ($NOVAS_VERSION)\n * DVT: 3.0.6.1 (DEFAULT)\n ****************************************************\n \n[qbar.mk] Warning: DVT_VERSION environment variable definition detected from improper origin: undefined.  DVT_VERSION should be defined in the environment prior to invoking qbar.\n\n ****************************************************\n
+SHELL=/bin/sh
+XL_VIP_HOME=/usr/local/projects/qct/evals/veloce/software/iSolveTransactors/xl_vip2.4.0.2b
+HOST=vl-xiaoshao-gridsdcb
+MAKEFLAGS=L -- _QBAR_LOCK_INFO=/tmp/.qbar_info_0EaCuiL/lock.104032 SIM_MODE=gui WAVES=fsdb WAVES_DUMP_ON=1 WAVES_FSDB_DUMP_MDA=1
+SSH_CLIENT=10.23.92.12 56896 22
+DESIGNWARE_HOME=/pkg/qct/verif/synopsys/dw_home
+SIM_MODE=gui
+GTK_RC_FILES=/etc/gtk/gtkrc:/usr2/xiaoshao/.gtkrc-1.2-gnome2
+_QBAR_MODE=standalone
+MORE=-sl
+WINDOWID=27262980
+QT_HOME_DIR=/usr/share/desktop-data
+defaultpath_104032=/usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr:/usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim
+VERA_HOME=/pkg/qct/software/synopsys/vera/Z-2006.12-16/home
+GV2_ENV=sourced
+WORKSPACE=/usr2/xiaoshao/uvm_training_labs/lab222/lab2
+LC_ALL=C
+QVMR_AVL_PATH=/pkg/qvmr/2.10.2/qbar/avl_default
+GROUPS=users vlsi phonesys vlsides ccmdm 16ff 10lp_be 10lp 7ff 7ff_be
+MAKEOVERRIDES=${-*-command-variables-*-}
+USER=xiaoshao
+JRE_HOME=/usr/lib64/jvm/jre
+GROUP=users
+QBAR_XL_VIP_INSTALL_ROOT=/usr/local/projects/qct/evals/veloce/software/iSolveTransactors
+LD_LIBRARY_PATH=/pkg/modeltech/6.6g/gcc-4.1.2-linux_x86_64/lib64:/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/linux_x86_64:/pkg/qct/software/novas/2012.07/share/PLI/MODELSIM/LINUX64:/pkg/qct/software/novas/2012.07/share/PLI/lib/LINUX64:/pkg/qct/software/mentor/veloce/Veloce_v1.5.0.19/lib/amd64.linux:/pkg/qct/software/mentor/tbx/tbx_v2.4.3.0/lib/linux64_el30_gnu4:/pkg/qct/verif/synopsys/dw_home/vip/common/5.24a/C/lib/home:/pkg/qct/verif/synopsys/dw_home/vip/vmt/2.93a/C/lib/home:/pkg/qct/gnu64/lib:/pkg/qct/software/modeltech/6.6g/gcc-4.1.2-suse9/lib:/pkg/qct/software/synopsys/vera/Z-2006.12-16/home/lib/denali:/pkg/qct/software/synopsys/vera/Z-2006.12-16/home/lib
+MTI_HOME=/pkg/qct/software/modeltech/6.6g
+CSHRCREAD=true
+QVMR_NOVAS_PLI_DIR=/pkg/qct/software/novas/2012.07/share/PLI/MODELSIM/LINUX64
+XNLSPATH=/usr/share/X11/nls
+MTI_VCO_MODE=64
+ENV=/etc/bash.bashrc
+SHELL_TYPE=C
+WAVES_DUMP_ON=1
+LIB=/prj/vlsi/tools/libraries
+GNOME_KEYRING_SOCKET=/tmp/keyring-HHElTb/socket
+WAVES_FSDB_DUMP_MDA=1
+HOSTTYPE=x86_64-linux
+SSH_AUTH_SOCK=/tmp/keyring-HHElTb/socket.ssh
+NOVAS_FSDB_ALL=1
+FROM_HEADER=
+SESSION_MANAGER=local/vl-xiaoshao-gridsdcb:@/tmp/.ICE-unix/16364,unix/vl-xiaoshao-gridsdcb:/tmp/.ICE-unix/16364
+MAKELEVEL=1
+PAGER=less
+MFLAGS=-L
+_QBAR_LOCK_INFO=/tmp/.qbar_info_0EaCuiL/lock.104032
+CSHEDIT=emacs
+XDG_CONFIG_DIRS=/etc/xdg
+QAFFEE_DEFAULT_INVOCATION=standalone
+MINICOM=-c on
+QBAR_ZIN_INSTALL_ROOT=/pkg/qct/software/mentor/0-in
+MAIL=/var/mail/xiaoshao
+PATH=/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/linux_x86_64:/bin:/pkg/qct/software/modeltech/6.6g/bin:/pkg/qct/software/modeltech/6.6g/gcc-4.1.2-suse9/bin:/pkg/qct/software/synopsys/vera/Z-2006.12-16/home/bin:/pkg/qct/software/mentor/tbx/tbx_v2.4.3.0/bin:/pkg/qct/software/mentor/veloce/Veloce_v1.5.0.19/bin:/pkg/qct/software/cadence/incisiv11.10.018/bin:/pkg/qct/software/denali/3.2.050/amd64/../bin:/pkg/qvmr/bin:/pkg/wts/qct/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/opt/kde3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/pkg/icetools/bin:/pkg/hwtools/bin:/pkg/netscape/bin:/pkg/gnu/bin:/pkg/qcaetools/syseng/bin:/prj/vlsi/tools/bin:/usr/atria/bin:/opt/rational/clearquest/bin:/opt/rational/common/bin:/local/mnt/workspace/eclipse/eclipse:/local/mnt/workspace/jre/jre1.5.0_17/bin:/usr/local/projects/qct/clearcase/scripts
+SN_ROOT=/pkg/qct/software/cadence/incisiv11.10.018
+CCASE_DISABLE_FDN_REUSE=TRUE
+TEST_NAME=pcounter_test_qclk_change_clock_period
+CPU=x86_64
+JAVA_BINDIR=/usr/lib64/jvm/jre/bin
+QVMR_WRAPPER=1
+TECH=/prj/vlsi/tools/tech
+QTEA_HOME=/pkg/qvmr/2.10.2/qtea
+MAGIC_PATH=/usr/local/projects/qct/clearcase/scripts/magic_files/qct-san
+INPUTRC=/etc/inputrc
+PWD=/usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/0.pcounter_test_qclk_change_clock_period/modelsim
+JAVA_HOME=/usr/lib64/jvm/jre
+WAVES_FSDB_DEPTH=0
+LANG=en_US.UTF-8
+QBAR_ID=
+PYTHONSTARTUP=/etc/pythonstart
+VCS_VERSION=vcs-mx_vF-2011.12-SP1
+VM_ROOT=/pkg/qct/software/cadence/incisiv11.10.018
+TBX_HOME=/pkg/qct/software/mentor/tbx/tbx_v2.4.3.0
+SAVE_SIM_COVERAGE_DIR=/usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/0.pcounter_test_qclk_change_clock_period/modelsim/coverage/modelsim
+CCASE_MAKE_COMPAT=gnu
+LM_LICENSE_FILE=1783@license-wan-26-sd:5280@license-wan-16-sd:5280@license-wan-11-sd:5280@license-wan-10-sd:5280@license-wan-1-encnaa:27600@license-wan-12-sd:27600@license-wan-13-sd:27600@license-wan-28-sd:27600@license-wan-17-sd:27600@license-wan-18-sd:27600@license-wan-26-sd:27600@license-wan-27-sd:1717@license-wan-13-sd:1717@license-wan-16-sd:1717@license-wan-12-sd:1717@license-wan-11-sd:1717@license-wan-15-sd:1717@license-wan-1-blr:27600@license-wan-21-sd:27600@license-wan-20-sd:27600@license-wan-22-sd:27600@license-wan-3-scl:27600@license-wan-1-aus:27600@license-wan-1-encnaa:27600@license-wan-4-encnaa:27600@license-wan-2-encnaa:27600@license-wan-3-encnaa:27600@license-wan-1-blr:27600@license-wan-25-sd:27600@license-wan-14-sd:27600@license-wan-24-sd:27600@license-wan-16-sd:27600@license-wan-11-sd:27600@license-wan-23-sd
+DENALI=/pkg/qct/software/denali/3.2.050/amd64
+CLEARCASE_MKELEM_USE_GRPLIST=true
+CODE_COVERAGE=1
+NOVAS_VERSION=2012.07
+ICEAUTHORITY=/usr2/xiaoshao/.ICEauthority
+HOME=/usr2/xiaoshao
+ICAROOT=/pkg/wts/qct/bin
+SHLVL=4
+SIM=modelsim
+HOME_0IN=/pkg/qct/software/mentor/0-in//linux_x86_64
+TECHDIR=/prj/vlsi/tools/tech
+LESS_ADVANCED_PREPROCESSOR=no
+OSTYPE=linux
+QVMR_HOME=/pkg/qvmr/2.10.2
+MAKE=make
+WAVES_FSDB_FILE=/usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/0.pcounter_test_qclk_change_clock_period/modelsim/sim.fsdb
+CODE_COVERAGE_DIR=/usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/0.pcounter_test_qclk_change_clock_period/modelsim/coverage/modelsim
+LS_OPTIONS=-N --color=tty -T 0
+XCURSOR_THEME=
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+CLEARCASE_BLD_UMASK=2
+QVMR_VERSION=2.10.2
+ZIN_VERSION=
+VENDOR=unknown
+WAVES_FSDB_DUMP_SVA=0
+WAVES=fsdb
+MACHTYPE=x86_64
+LOGNAME=xiaoshao
+G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-1,CP1252
+LESS=-M -I
+CVS_RSH=ssh
+SSH_CONNECTION=10.23.92.12 56896 10.56.123.27 22
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/etc/opt/kde3/share:/opt/kde3/share:/usr/share/gnome
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-TsaxNXTDFU,guid=514f91369f33baea4545a34858cac616
+MOZILLA_HOME=/pkg/netscape/bin
+MED_COMMON_LLSW_FILES=/pkg/qct/software/mentor/veloce/Veloce_v1.5.0.19/TnD
+TBX_VERSION=tbx_v2.4.3.0
+LESSOPEN=lessopen.sh %s
+MED_EMULATOR=/prj/qct/sim-accel/veloce/EMULATORS
+XL_VIP_VERSION=xl_vip2.4.0.2b
+INFOPATH=/usr/local/info:/usr/share/info:/usr/info:/pkg/icetools/info:/pkg/gnu/info:/pkg/ispell/info
+DW_LICENSE_OVERRIDE=DesignWare-Regression
+MAKEPARSER_KEEP_LOG=1
+MODELTECH_VERSION=6.6g
+SUBSCRIPTIONS=qct_clearcase
+DISPLAY=vl-xiaoshao-gridsdcb:11.0
+XAUTHLOCALHOSTNAME=vl-xiaoshao-gridsdcb
+DIM_QBAR_INFO_FILE=/usr2/xiaoshao/.qbar_dim/.qbar_dim_info_bIjNzk/dim_info
+LESSCLOSE=lessclose.sh %s %s
+G_BROKEN_FILENAMES=1
+QBAR_HOME=/pkg/qvmr/2.10.2/qbar
+QVMR_DUT_DIR=/usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/libs/default/hdl/modelsim/6.6g/LINUX64
+COLORTERM=gnome-terminal
+JAVA_ROOT=/usr/lib64/jvm/jre
+MODEL_TECH=/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/linux_x86_64
+MODEL_TECH_TCL=/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/linux_x86_64/../tcl
+TCL_LIBRARY=/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/linux_x86_64/../tcl/tcl8.4
+TK_LIBRARY=/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/linux_x86_64/../tcl/tk8.4
+ITCL_LIBRARY=/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/linux_x86_64/../tcl/itcl3.0
+ITK_LIBRARY=/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/linux_x86_64/../tcl/itk3.0
+VSIM_LIBRARY=/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/linux_x86_64/../tcl/vsim
+MODELSIM=modelsim.ini
+TCL_PRINTER_CONFFILE=/usr2/xiaoshao/.hte/v2_77/.hte.ini
+ENSCRIPT_LIBRARY=/usr/share/enscript
+TIX_LIBRARY=/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/linux_x86_64/../tcl/tix
+Runtime command line arguments:
+argv[0]=LoadDesign
+argv[1]=+UVM_TESTNAME=pcounter_test_qclk_change_clock_period
+argv[2]=+UVM_USE_OVM_RUN_SEMANTIC
+argv[3]=-L
+argv[4]=hdl_work
+argv[5]=-L
+argv[6]=tb_work
+argv[7]=-assertdebug
+argv[8]=-coverage
+argv[9]=-l
+argv[10]=./sim_gui.log
+argv[11]=-lib
+argv[12]=tb_work
+argv[13]=-permit_unmatched_virtual_intf
+argv[14]=-gui
+argv[15]=-onfinish
+argv[16]=stop
+argv[17]=-pli
+argv[18]=/pkg/qct/software/novas/2012.07/share/PLI/MODELSIM/LINUX64/novas_fli.so
+argv[19]=-sclib
+argv[20]=tb_work
+argv[21]=-sv_seed
+argv[22]=1
+argv[23]=-t
+argv[24]=ns
+argv[25]=-sv_root
+argv[26]=/usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/misc/LINUX64/6.6g
+argv[27]=-sv_lib
+argv[28]=dpi_lib
+argv[29]=hdl_work.test_bench
+argv[30]=tb_work.tb_top
+argv[31]=tb_work.novas
+argv[32]=tb_work.TbxSvManager
+210 profile - 100
+          CPU/Mem usage: 0.000 sys,  0.000 user,  257.06M sys,  0.00M vm
+211 VC callback profile - scalar:0 vector:0
+212 Thu Mar 16 17:29:50 2017
+213 pliAppInit
+214 ndpGetenv(FSDB_ALL): 1
+215 pliAppMiscSet: New Sim Round
+216 LIBSSCORE=found /pkg/qct/software/novas/2012.07/share/PLI/MODELSIM/LINUX64/libsscore_mti66.so through $LD_LIBRARY_PATH setting.
+217 Sim process exit

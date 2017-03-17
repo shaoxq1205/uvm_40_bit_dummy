@@ -1,0 +1,37 @@
+ ****************************************************
+ * SESSION INFO
+ ****************************************************
+ * QVMR: 2.10.2
+ * Flow: tbx
+ * Goals: sim
+ * Flags: 
+ * Platform: LINUX64
+ * Host: vl-xiaoshao-gridsdcb
+ * Process ID: 17155
+ * Makefile: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr/Makefile
+ * Session started: Thu Mar 16 15:07:58 PDT 2017
+ * Host Uptime:  15:07pm  up 13 days  2:57,  3 users,  load average: 0.21, 0.17, 0.24
+ ****************************************************
+ * TOOL INFO
+ ****************************************************
+ * Modelsim: 6.6g ($MODELTECH_VERSION)
+ * DVT: 3.0.6.1 (DEFAULT)
+ ****************************************************
+ 
+[qbar.mk] Warning: DVT_VERSION environment variable definition detected from improper origin: undefined.  DVT_VERSION should be defined in the environment prior to invoking qbar.
+
+ ****************************************************
+[Thu Mar 16 15:07:59 PDT 2017] Make: Generate TB makefile (hier) ...
+[Thu Mar 16 15:07:59 PDT 2017] Make:  cd /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr/unmanaged/qvmr/xiaoshao/libs/default/tb/modelsim/6.6g/LINUX64 && /pkg/qvmr/bin/qbar_cs2mk    -ignore_missing -ignore_src_filter_spec_err -type hvl -task sim -top uvc_pcounter_tb -tool modelsim -mode hier -disable_global_libs -spec_path /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr/libs/verification/quvm -spec_path /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr/verif -spec_path /usr/local/projects/qct/evals/veloce/software/iSolveTransactors/xl_vip2.4.0.2b  -disable_global_libs -phony -prefix tb -block 'uvc_pcounter_tb' -output_dir /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr/unmanaged/qvmr/xiaoshao/libs/default/tb/modelsim/6.6g/LINUX64 -default_work tb_work -gen_output 1
+[WARN]  03/16/2017 15:07:59 Compile spec search path does not exist: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr/libs/verification/quvm
+
+[WARN]  03/16/2017 15:07:59 Compile spec search path does not exist: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr/verif
+
+[INFO]  03/16/2017 15:07:59 Invoking QDistiller API
+[INFO]  03/16/2017 15:07:59 Processed 131 environment variables [00s]
+[INFO]  03/16/2017 15:07:59 Scanning directory '/prj/qct/evals/veloce/software/iSolveTransactors/xl_vip2.4.0.2b'.
+[ERROR] 03/16/2017 15:08:00 Specified top-level CompileSpec 'uvc_pcounter_tb' not found. Cannot process further.
+[ERROR] 03/16/2017 15:08:00 Unable to find CompileSpec 'uvc_pcounter_tb'. This is most likely due to a missing CompileSpec file. Please verify that a compile.xml or makefile exists for this block and that the name for that file is 'uvc_pcounter_tb'.
+[INFO]  03/16/2017 15:08:00 QDistiller API returned
+[ERROR] 03/16/2017 15:08:00 Unable to get compile spec for block 'uvc_pcounter_tb'
+- CleanLock Info: Successfully cleared compile lock.

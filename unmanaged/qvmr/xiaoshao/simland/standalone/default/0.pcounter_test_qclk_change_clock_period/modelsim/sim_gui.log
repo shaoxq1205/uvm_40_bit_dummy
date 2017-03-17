@@ -1,0 +1,347 @@
+# Reading /afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/tcl/vsim/pref.tcl 
+# //  QuestaSim-64 6.6g May 23 2012 Linux 3.0.101-88-default
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim +UVM_TESTNAME=pcounter_test_qclk_change_clock_period +UVM_USE_OVM_RUN_SEMANTIC -L hdl_work -L tb_work -assertdebug -coverage -l ./sim_gui.log -lib tb_work -permit_unmatched_virtual_intf -gui -onfinish stop -pli /pkg/qct/software/novas/2012.07/share/PLI/MODELSIM/LINUX64/novas_fli.so -sclib tb_work -sv_seed 1 -t ns -sv_root /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/misc/LINUX64/6.6g -sv_lib dpi_lib hdl_work.test_bench tb_work.tb_top tb_work.novas tb_work.TbxSvManager 
+# Loading /pkg/qct/software/novas/2012.07/share/PLI/MODELSIM/LINUX64/novas_fli.so
+# *Novas* Loading libsscore_mti66.so
+# Loading sv_std.std
+# Loading hdl_work.test_bench
+# Loading hdl_work.clock_bfm
+# Loading hdl_work.ClkRstDriver
+# Loading hdl_work.XlClockAdvancer
+# Loading hdl_work.XlResetGenerator
+# Loading hdl_work.ProgClockGater
+# Loading hdl_work.pcounter
+# Loading hdl_work.pcounter_int
+# Loading tb_work.XlSvPkg
+# Loading tb_work.uvm_pkg
+# Loading tb_work.quvm_addons_pkg
+# Loading tb_work.qclk_pkg
+# Loading tb_work.pcounter_pkg
+# Loading tb_work.pcounter_test_pkg
+# Loading tb_work.tb_top
+# Loading hdl_work.dut_if
+# Loading std.standard
+# Loading tb_work.novas(novas_arch)
+# Loading tb_work.TbxSvManager
+# Loading hdl_work.ProgClkDriver_INIT0_WithInitialDelay
+# Loading /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/libs/default/tb/modelsim/6.6g/LINUX64/tb_work/_sc/linux_x86_64_gcc-4.1.2/systemc.so
+# Loading /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/libs/default/tb/modelsim/6.6g/LINUX64/tb_work.TbxScManager
+# ** Warning: (vsim-3017) /usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/clock_bfm.sv(613): [TFMPC] - Too few port connections. Expected 3, found 2.
+#         Region: /test_bench/u_clock/intf1
+# ** Warning: (vsim-3722) /usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/clock_bfm.sv(613): [TFMPC] - Missing connection for port 'clock'.
+# ** Warning: (vsim-3017) /usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/test_bench.sv(31): [TFMPC] - Too few port connections. Expected 4, found 0.
+#         Region: /test_bench/dut
+# ** Warning: (vsim-3722) /usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/test_bench.sv(31): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) /usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/test_bench.sv(31): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3722) /usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/test_bench.sv(31): [TFMPC] - Missing connection for port 'data_in'.
+# ** Warning: (vsim-3722) /usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/test_bench.sv(31): [TFMPC] - Missing connection for port 'data_out'.
+# Compiling /var/tmp/xiaoshao@vl-xiaoshao-gridsdcb_dpi_105847/exportwrapper.c
+# Loading /var/tmp/xiaoshao@vl-xiaoshao-gridsdcb_dpi_105847/exportwrapper.so
+# Loading /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/misc/LINUX64/6.6g/dpi_lib.so
+# 
+#  
+add wave -r /*
+run -all
+# ----------------------------------------------------------------
+# UVM-1.1b
+# (C) 2007-2012 Mentor Graphics Corporation
+# (C) 2007-2012 Cadence Design Systems, Inc.
+# (C) 2006-2012 Synopsys, Inc.
+# (C) 2011-2012 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0 ns: reporter [RNTST] Running test pcounter_test_qclk_change_clock_period...
+# void dpii_initialize_component_handle(const char *hdlPath, svBitVecVAl *handle)
+# hdlPath = test_bench.u_clock.intf1.p1.clkDriver.i1 
+# void dpii_initialize_component_handle(const char *hdlPath, svBitVecVAl *handle)
+# hdlPath = test_bench.u_clock.intf1.clkGater 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_proxy.sv(251) @ 0 ns: reporter [qclk_proxy] Creating proxy class for ClockAdvancer test_bench.u_clock.intf1.clockAdvancer
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_proxy.sv(258) @ 0 ns: reporter [qclk_proxy] Creating proxy class for ResetGenerator test_bench.u_clock.intf1.resetGenerator
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/./pcounter_env.sv(151) @ 0 ns: env_h [pcounter_env] Set config object in pcounter_env
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_agent.sv(112) @ 0 ns: env_h.m_qclk_agent_h [qclk_agent] Constructing the analysis export port 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_agent.sv(117) @ 0 ns: env_h.m_qclk_agent_h [qclk_agent] Constructing the qclk_driver
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_agent.sv(121) @ 0 ns: env_h.m_qclk_agent_h [qclk_agent] Cconstructing the qclk sequencer
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/tests/src/./pcounter_test_base.sv(122) @ 0 ns: uvm_test_top [pcounter_test_qclk_change_clock_period] creating the environment
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/tests/src/./pcounter_test_base.sv(125) @ 0 ns: uvm_test_top [pcounter_test_qclk_change_clock_period] test message NONE (critical summary info only)
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/tests/src/./pcounter_test_base.sv(126) @ 0 ns: uvm_test_top [pcounter_test_qclk_change_clock_period] test message LOW (one time important messages)
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/tests/src/./pcounter_test_base.sv(127) @ 0 ns: uvm_test_top [pcounter_test_qclk_change_clock_period] test message MEDIUM (basic test progression)
+# void dpii_initialize_component_handle(const char *hdlPath, svBitVecVAl *handle)
+# hdlPath = test_bench.u_clock.intf1.p1.clkDriver.i1 
+# void dpii_initialize_component_handle(const char *hdlPath, svBitVecVAl *handle)
+# hdlPath = test_bench.u_clock.intf1.clkGater 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_proxy.sv(251) @ 0 ns: reporter [qclk_proxy] Creating proxy class for ClockAdvancer test_bench.u_clock.intf1.clockAdvancer
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_proxy.sv(258) @ 0 ns: reporter [qclk_proxy] Creating proxy class for ResetGenerator test_bench.u_clock.intf1.resetGenerator
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/./pcounter_env.sv(151) @ 0 ns: uvm_test_top.m_env_h [pcounter_env] Set config object in pcounter_env
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_agent.sv(112) @ 0 ns: uvm_test_top.m_env_h.m_qclk_agent_h [qclk_agent] Constructing the analysis export port 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_agent.sv(117) @ 0 ns: uvm_test_top.m_env_h.m_qclk_agent_h [qclk_agent] Constructing the qclk_driver
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_agent.sv(121) @ 0 ns: uvm_test_top.m_env_h.m_qclk_agent_h [qclk_agent] Cconstructing the qclk sequencer
+# =============================================================
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(100) @ 0 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Start Advance Clock Seq for  QCLK
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(180) @ 6 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] -----------------------Received QCLK Transaction 
+# ------------------------------------------------
+# Name                           Type       Size  Value
+# ------------------------------------------------
+# req                            qclk_item  -     @1172
+#   value                        integral   32    'h9
+#   begin_time                   time       64    6 ns
+#   depth                        int        32    'd3
+#   parent sequence (name)       string     17    clk_advance_seq_h                                                                                           
+#   parent sequence (full name)  string     108   uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h.clk_advance_seq_h
+#   sequencer                    string     49    uvm_test_top.m_env_h.m_qclk_agent_h.m_sequencer_h                                                           
+# ------------------------------------------------
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(185) @ 6 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current randomized value is:           9==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(186) @ 6 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Input of DUT is:             9==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(187) @ 6 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Output of DUT is:             x==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(199) @ 15 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] Sent QCLK response to sequencer
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(102) @ 15 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Done Advance Clock seq for QCLK
+# =============================================================
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(100) @ 15 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Start Advance Clock Seq for  QCLK
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(180) @ 15 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] -----------------------Received QCLK Transaction 
+# ------------------------------------------------
+# Name                           Type       Size  Value
+# ------------------------------------------------
+# req                            qclk_item  -     @1281
+#   value                        integral   32    'h7
+#   begin_time                   time       64    15 ns
+#   depth                        int        32    'd3
+#   parent sequence (name)       string     17    clk_advance_seq_h                                                                                           
+#   parent sequence (full name)  string     108   uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h.clk_advance_seq_h
+#   sequencer                    string     49    uvm_test_top.m_env_h.m_qclk_agent_h.m_sequencer_h                                                           
+# ------------------------------------------------
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(185) @ 15 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current randomized value is:           7==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(186) @ 15 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Input of DUT is:             7==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(187) @ 15 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Output of DUT is:            10==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(199) @ 25 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] Sent QCLK response to sequencer
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(102) @ 25 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Done Advance Clock seq for QCLK
+# =============================================================
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(100) @ 25 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Start Advance Clock Seq for  QCLK
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(180) @ 25 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] -----------------------Received QCLK Transaction 
+# ------------------------------------------------
+# Name                           Type       Size  Value
+# ------------------------------------------------
+# req                            qclk_item  -     @1293
+#   value                        integral   32    'h6
+#   begin_time                   time       64    25 ns
+#   depth                        int        32    'd3
+#   parent sequence (name)       string     17    clk_advance_seq_h                                                                                           
+#   parent sequence (full name)  string     108   uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h.clk_advance_seq_h
+#   sequencer                    string     49    uvm_test_top.m_env_h.m_qclk_agent_h.m_sequencer_h                                                           
+# ------------------------------------------------
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(185) @ 25 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current randomized value is:           6==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(186) @ 25 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Input of DUT is:             6==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(187) @ 25 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Output of DUT is:             8==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(199) @ 35 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] Sent QCLK response to sequencer
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(102) @ 35 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Done Advance Clock seq for QCLK
+# =============================================================
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(100) @ 35 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Start Advance Clock Seq for  QCLK
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(180) @ 35 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] -----------------------Received QCLK Transaction 
+# ------------------------------------------------
+# Name                           Type       Size  Value
+# ------------------------------------------------
+# req                            qclk_item  -     @1305
+#   value                        integral   32    'h5
+#   begin_time                   time       64    35 ns
+#   depth                        int        32    'd3
+#   parent sequence (name)       string     17    clk_advance_seq_h                                                                                           
+#   parent sequence (full name)  string     108   uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h.clk_advance_seq_h
+#   sequencer                    string     49    uvm_test_top.m_env_h.m_qclk_agent_h.m_sequencer_h                                                           
+# ------------------------------------------------
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(185) @ 35 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current randomized value is:           5==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(186) @ 35 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Input of DUT is:             5==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(187) @ 35 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Output of DUT is:             7==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(199) @ 45 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] Sent QCLK response to sequencer
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(102) @ 45 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Done Advance Clock seq for QCLK
+# =============================================================
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(100) @ 45 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Start Advance Clock Seq for  QCLK
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(180) @ 45 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] -----------------------Received QCLK Transaction 
+# ------------------------------------------------
+# Name                           Type       Size  Value
+# ------------------------------------------------
+# req                            qclk_item  -     @1317
+#   value                        integral   32    'h3
+#   begin_time                   time       64    45 ns
+#   depth                        int        32    'd3
+#   parent sequence (name)       string     17    clk_advance_seq_h                                                                                           
+#   parent sequence (full name)  string     108   uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h.clk_advance_seq_h
+#   sequencer                    string     49    uvm_test_top.m_env_h.m_qclk_agent_h.m_sequencer_h                                                           
+# ------------------------------------------------
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(185) @ 45 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current randomized value is:           3==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(186) @ 45 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Input of DUT is:             3==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(187) @ 45 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Output of DUT is:             6==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(199) @ 55 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] Sent QCLK response to sequencer
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(102) @ 55 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Done Advance Clock seq for QCLK
+# =============================================================
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(100) @ 55 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Start Advance Clock Seq for  QCLK
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(180) @ 55 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] -----------------------Received QCLK Transaction 
+# ------------------------------------------------
+# Name                           Type       Size  Value
+# ------------------------------------------------
+# req                            qclk_item  -     @1329
+#   value                        integral   32    'h7
+#   begin_time                   time       64    55 ns
+#   depth                        int        32    'd3
+#   parent sequence (name)       string     17    clk_advance_seq_h                                                                                           
+#   parent sequence (full name)  string     108   uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h.clk_advance_seq_h
+#   sequencer                    string     49    uvm_test_top.m_env_h.m_qclk_agent_h.m_sequencer_h                                                           
+# ------------------------------------------------
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(185) @ 55 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current randomized value is:           7==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(186) @ 55 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Input of DUT is:             7==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(187) @ 55 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Output of DUT is:             4==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(199) @ 65 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] Sent QCLK response to sequencer
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(102) @ 65 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Done Advance Clock seq for QCLK
+# =============================================================
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(100) @ 65 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Start Advance Clock Seq for  QCLK
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(180) @ 65 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] -----------------------Received QCLK Transaction 
+# ------------------------------------------------
+# Name                           Type       Size  Value
+# ------------------------------------------------
+# req                            qclk_item  -     @1341
+#   value                        integral   32    'h8
+#   begin_time                   time       64    65 ns
+#   depth                        int        32    'd3
+#   parent sequence (name)       string     17    clk_advance_seq_h                                                                                           
+#   parent sequence (full name)  string     108   uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h.clk_advance_seq_h
+#   sequencer                    string     49    uvm_test_top.m_env_h.m_qclk_agent_h.m_sequencer_h                                                           
+# ------------------------------------------------
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(185) @ 65 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current randomized value is:           8==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(186) @ 65 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Input of DUT is:             8==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(187) @ 65 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Output of DUT is:             8==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(199) @ 75 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] Sent QCLK response to sequencer
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(102) @ 75 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Done Advance Clock seq for QCLK
+# =============================================================
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(100) @ 75 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Start Advance Clock Seq for  QCLK
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(180) @ 75 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] -----------------------Received QCLK Transaction 
+# ------------------------------------------------
+# Name                           Type       Size  Value
+# ------------------------------------------------
+# req                            qclk_item  -     @1353
+#   value                        integral   32    'h4
+#   begin_time                   time       64    75 ns
+#   depth                        int        32    'd3
+#   parent sequence (name)       string     17    clk_advance_seq_h                                                                                           
+#   parent sequence (full name)  string     108   uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h.clk_advance_seq_h
+#   sequencer                    string     49    uvm_test_top.m_env_h.m_qclk_agent_h.m_sequencer_h                                                           
+# ------------------------------------------------
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(185) @ 75 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current randomized value is:           4==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(186) @ 75 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Input of DUT is:             4==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(187) @ 75 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] 
+# =======================Current Output of DUT is:             9==============================
+# 
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_driver.sv(199) @ 85 ns: uvm_test_top.m_env_h.m_qclk_agent_h.m_driver_h [qclk_driver] Sent QCLK response to sequencer
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/src/../sequence_lib/src/pcounter_test_qclk_change_clock_period_vseq.sv(102) @ 85 ns: uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h@@m_test_qclk_change_clock_period_vseq_h [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h] Done Advance Clock seq for QCLK
+# UVM_INFO /usr2/xiaoshao/uvm_training_labs/lab222/lab2/libs/verification/quvm/release/src/base/uvm_objection.svh(1120) @ 85 ns: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+#### Factory Configuration (*)
+# 
+#   No instance or type overrides are registered with this factory
+# (*) Types with no associated type name will be printed as <unknown>
+# 
+####
+# 
+# 
+#### Factory Configuration (*)
+# 
+#   No instance or type overrides are registered with this factory
+# (*) Types with no associated type name will be printed as <unknown>
+# 
+####
+# 
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   74
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [RNTST]     1
+# [TEST_DONE]     1
+# [pcounter_env]     2
+# [pcounter_test_qclk_change_clock_period]     4
+# [qclk_agent]     6
+# [qclk_driver]    40
+# [qclk_proxy]     4
+# [uvm_test_top.m_env_h.m_pcounter_virtual_sequencer_h.m_test_qclk_change_clock_period_vseq_h]    16
+# ** Note: $finish    : /usr2/xiaoshao/uvm_training_labs/lab222/lab2/libs/verification/quvm/release/src/base/uvm_root.svh(408)
+#    Time: 85 ns  Iteration: 59  Instance: /tb_top
+# Break in Task run_test at /usr2/xiaoshao/uvm_training_labs/lab222/lab2/libs/verification/quvm/release/src/base/uvm_root.svh line 408
