@@ -68,15 +68,15 @@ class qclk_driver extends uvm_driver #(qclk_item);
   `uvm_component_utils (qclk_driver)             ///< register qclk_driver with factory
 
 //Added by Xiaoqiang
-  virtual dut_if dut_vif;
+  virtual qclk_if dut_vif;
 
 
   // analysis port, for connecting this driver to other "static" parts of
   // the enviornment like scoreboards or coverage 
-  uvm_analysis_port #(qclk_item) m_analysis_port;      ///< analysis port to connect to agent
+  uvm_analysis_port #(qclk_item) drv_analysis_port;      ///< analysis port to connect to agent
   qclk_item                      m_req_h;              ///< handle to the inocoming request
-  qclk_item                      m_rsp_h;              ///< handle of the outgoing request
-  qclk_proxy                     m_qclk_proxy;         ///< handle to the proxy class                  
+  // qclk_item                      m_rsp_h;              ///< handle of the outgoing request
+  // qclk_proxy                     m_qclk_proxy;         ///< handle to the proxy class                  
     
   /**
    * @brief Constructor
@@ -130,7 +130,7 @@ super.build_phase(phase);
   /// Only constructing the analysis port
   /// Assuming that the seq_item_port is already constructed
   /// as part of the super.build_phase()
-  m_analysis_port = new( "m_analysis_port", this );
+  drv_analysis_port = new( "drv_analysis_port", this );
 endfunction: build_phase
 
 //-----------------------------------------------------------------------------
@@ -145,20 +145,20 @@ function void qclk_driver::connect_phase (uvm_phase phase);
    
   /// The object is stored in uvm_config_db database
 
-  `uvm_info(get_type_name(), "Getting handle to proxy class from config space ", UVM_HIGH );
-  if(!uvm_config_db#(qclk_proxy)::get (this, "", "m_qclk_proxy", m_qclk_proxy)) begin
-    `uvm_fatal( get_type_name(), "Can't get the qclk_proxy object handle." );
-  end
+  // `uvm_info(get_type_name(), "Getting handle to proxy class from config space ", UVM_HIGH );
+  // if(!uvm_config_db#(qclk_proxy)::get (this, "", "m_qclk_proxy", m_qclk_proxy)) begin
+  //   `uvm_fatal( get_type_name(), "Can't get the qclk_proxy object handle." );
+  // end
   
   //Added by Xiaoqiang
   `uvm_info(get_type_name(), "Getting virtual interface config space ", UVM_HIGH );
-  if(!uvm_config_db#(virtual dut_if)::get(this, "*", "dut_vif", dut_vif)) begin
+  if(!uvm_config_db#(virtual qclk_if)::get(this, "*", "qclk_if", dut_vif)) begin   //class name,  string config name
     `uvm_fatal( get_type_name(), "uvm_config_db get failed." );
   end
 
-  if (m_qclk_proxy == null) begin
-    `uvm_fatal( get_type_name(), "Proxy class handle is null." );
-  end
+  // if (m_qclk_proxy == null) begin
+  //   `uvm_fatal( get_type_name(), "Proxy class handle is null." );
+  // end
 
 endfunction: connect_phase
 
@@ -169,36 +169,41 @@ task qclk_driver::run_phase (uvm_phase phase);
   `uvm_info(get_type_name(),  "QCLK driver starting", UVM_HIGH);
 
 //Added by Xiaoqiang
-dut_vif.rst = 1;
-@(posedge dut_vif.clk);
-#1;
-dut_vif.rst = 0;
-   
+// dut_vif.rst = 1;
+// @(posedge dut_vif.bfm_cb);
+// #1;
+// dut_vif.rst = 0;
+   dut_vif.bfm_cb.rdy <= 0; //control signal
+
+
   forever begin: forever_loop
     // Get a new transaction from the sequencer
     seq_item_port.get_next_item(m_req_h);
     `uvm_info(get_type_name(),   $psprintf("-----------------------Received QCLK Transaction \n%s", m_req_h.sprint()), UVM_LOW )   
 
-//Added by Xiaoqiang
-  dut_vif.data_in = m_req_h.value;
+//Added by Xiaoqian
+  dut_vif.bfm_cb.data <= m_req_h.value;
+  dut_vif.bfm_cb.rdy <= m_req_h.rdy;
   
+  
+ @(posedge dut_vif.bfm_cb);
+
   `uvm_info( get_type_name(), $psprintf("\n=======================Current randomized value is: %d==============================\n", m_req_h.value ), UVM_LOW)
-  `uvm_info( get_type_name(), $psprintf("\n=======================Current Input of DUT is: %d==============================\n", dut_vif.data_in ), UVM_LOW)
-  `uvm_info( get_type_name(), $psprintf("\n=======================Current Output of DUT is: %d==============================\n", dut_vif.data_out ), UVM_LOW)
-@(posedge dut_vif.clk);
+  `uvm_info( get_type_name(), $psprintf("\n=======================Current Input of DUT is: %d==============================\n", dut_vif.bfm_cb.data ), UVM_LOW)
+
     // Update the analysis port to indicate that a transaction was received
     // Useful for logging transactions and coverage calculations
-    m_analysis_port.write(m_req_h);
+    drv_analysis_port.write(m_req_h);// not used in this example, right?
     // qclk_drive_transaction(m_req_h);
     // Deleted by Xiaoqiang
 
     // Send a response back to the sequencer
-    m_rsp_h = qclk_item::type_id::create( "m_rsp_h" );
-    m_rsp_h.set_id_info( m_req_h );
-    seq_item_port.put( m_rsp_h );
-    `uvm_info( get_type_name( ),  "Sent QCLK response to sequencer" , UVM_LOW )
+    // m_rsp_h = qclk_item::type_id::create( "m_rsp_h" );
+    // m_rsp_h.set_id_info( m_req_h );
+    // seq_item_port.put( m_rsp_h );
+    // `uvm_info( get_type_name( ),  "Sent QCLK response to sequencer" , UVM_LOW )
+    
     seq_item_port.item_done();
-      
       
   end: forever_loop
 

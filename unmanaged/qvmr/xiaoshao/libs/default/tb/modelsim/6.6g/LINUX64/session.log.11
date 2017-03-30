@@ -1,0 +1,71 @@
+ ****************************************************
+ * SESSION INFO
+ ****************************************************
+ * QVMR: 2.10.2
+ * Flow: tbx
+ * Goals: sim
+ * Flags: WAVES=fsdb WAVES_DUMP_ON=1 WAVES_FSDB_DUMP_MDA=1
+ * Platform: LINUX64
+ * Host: vl-xiaoshao-gridsdcb
+ * Process ID: 113984
+ * Makefile: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr/Makefile
+ * Session started: Thu Mar 30 14:29:30 PDT 2017
+ * Host Uptime:  14:29pm  up 27 days  2:19,  3 users,  load average: 0.13, 0.13, 0.09
+ ****************************************************
+ * TOOL INFO
+ ****************************************************
+ * Modelsim: 6.6g ($MODELTECH_VERSION)
+ * Novas: 2012.07 ($NOVAS_VERSION)
+ * DVT: 3.0.6.1 (DEFAULT)
+ ****************************************************
+ 
+[qbar.mk] Warning: DVT_VERSION environment variable definition detected from improper origin: undefined.  DVT_VERSION should be defined in the environment prior to invoking qbar.
+
+ ****************************************************
+[Thu Mar 30 14:29:31 PDT 2017] Make: Compiling uvm for modelsim 1/1 (tb block 1 of 8) ...
+[Thu Mar 30 14:29:31 PDT 2017] Make:  cd /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/libs/default/tb/modelsim/6.6g/LINUX64 && /pkg/qvmr/bin/Vlog -qc_standalone    +incdir+/usr2/xiaoshao/uvm_training_labs/lab222/lab2/libs/verification/quvm/release/src -mfcu -timescale 1ns/1ps   -sv -incr               +incdir+/usr2/xiaoshao/uvm_training_labs/lab222/lab2/libs/verification/quvm/release/src/. /usr2/xiaoshao/uvm_training_labs/lab222/lab2/libs/verification/quvm/release/src/uvm_pkg.sv -work tb_work   
+QuestaSim-64 vlog 6.6g Compiler 2012.05 May 23 2012
+-- Skipping package uvm_pkg
+
+Top level modules:
+	--none--
+
+[Thu Mar 30 14:29:32 PDT 2017] Make: Compiling quvm_addons for modelsim 1/1 (tb block 2 of 8) ...
+[Thu Mar 30 14:29:32 PDT 2017] Make:  cd /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/libs/default/tb/modelsim/6.6g/LINUX64 && /pkg/qvmr/bin/Vlog -qc_standalone    +incdir+/usr2/xiaoshao/uvm_training_labs/lab222/lab2/libs/verification/quvm/release/src -mfcu -timescale 1ns/1ps   -sv -incr               +incdir+/usr2/xiaoshao/uvm_training_labs/lab222/lab2/libs/verification/quvm/addons/src/. /usr2/xiaoshao/uvm_training_labs/lab222/lab2/libs/verification/quvm/addons/src/quvm_addons_pkg.sv -work tb_work   
+QuestaSim-64 vlog 6.6g Compiler 2012.05 May 23 2012
+-- Skipping package quvm_addons_pkg
+
+Top level modules:
+	--none--
+
+[Thu Mar 30 14:29:33 PDT 2017] Make: Compiling xl_vip_hvl_sysv_open_kit for modelsim 1/1 (tb block 3 of 8) ...
+[Thu Mar 30 14:29:33 PDT 2017] Make:  cd /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/libs/default/tb/modelsim/6.6g/LINUX64 && /pkg/qvmr/bin/Vlog -qc_standalone    +incdir+/usr2/xiaoshao/uvm_training_labs/lab222/lab2/libs/verification/quvm/release/src -mfcu -timescale 1ns/1ps   -sv -incr               +incdir+/pkg/qct/software/mentor/tbx/tbx_v2.4.3.0/questa/hdl +incdir+/pkg/qct/software/mentor/tbx/tbx_v2.4.3.0/questa/hdl/xtlm +incdir+/usr/local/projects/qct/evals/veloce/software/iSolveTransactors/xl_vip2.4.0.2b/xl_vip/lib -f ./xl_vip_hvl_sysv_open_kit_hier_tb_sv.f -work tb_work   
+QuestaSim-64 vlog 6.6g Compiler 2012.05 May 23 2012
+-- Skipping package tbx_event_pkg
+-- Skipping package xtlm_base_pkg
+-- Skipping package xtlm_pkg
+-- Skipping package XlSvPkg
+-- Skipping package XlSvTimeAdvancerPkg
+-- Skipping package XlSvResetGeneratorPkg
+-- Skipping package XlSvMemoryTransactorPkg
+-- Skipping package XlSvGpioTransactorPkg
+-- Skipping package XlSvEdgeDetectorPkg
+
+Top level modules:
+	--none--
+
+[Thu Mar 30 14:29:33 PDT 2017] Make: Compiling uvc_qclk_dpi for modelsim 1/1 (tb block 4 of 8) ...
+[Thu Mar 30 14:29:33 PDT 2017] Make:  cd /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/libs/default/tb/modelsim/6.6g/LINUX64 && /pkg/qvmr/bin/Sccom -qc_standalone    -fPIC -DQUESTA -I/pkg/qct/software/modeltech/6.6g/include                  -g -Wall -fPIC -DSC_INCLUDE_DYNAMIC_PROCESSES -I. -I/pkg/qct/software/modeltech/6.6g/include -I/usr/local/projects/qct/evals/veloce/software/iSolveTransactors/xl_vip2.4.0.2b/xl_vip/lib /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/DPI/qclk_proxy_dpi.cpp -work tb_work   
+
+QuestaSim-64 sccom 6.6g compiler 2012.05 May 23 2012
+
+[Thu Mar 30 14:29:34 PDT 2017] Make: Compiling uvc_qclk for modelsim 1/1 (tb block 5 of 8) ...
+[Thu Mar 30 14:29:34 PDT 2017] Make:  cd /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/libs/default/tb/modelsim/6.6g/LINUX64 && /pkg/qvmr/bin/Vlog -qc_standalone    +incdir+/usr2/xiaoshao/uvm_training_labs/lab222/lab2/libs/verification/quvm/release/src -mfcu -timescale 1ns/1ps   -sv -incr               +incdir+/usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/. +incdir+/usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/../sequence_lib/src +incdir+/usr/local/projects/qct/evals/veloce/software/iSolveTransactors/xl_vip2.4.0.2b/xl_vip/lib -f ./uvc_qclk_hier_tb_sv.f -work tb_work   
+QuestaSim-64 vlog 6.6g Compiler 2012.05 May 23 2012
+** Error: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_scoreboard.sv(155): Class 'qclk_scoreboard' does not declare a prototype for function 'report_phase'.
+** Error: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_scoreboard.sv(157): Undefined variable: VECT_CNT.
+** Error: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_scoreboard.sv(157): Undefined variable: ERROR_CNT.
+** Error: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_scoreboard.sv(168): Undefined variable: PASS_CNT.
+** Error: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/./qclk_scoreboard.sv(174): near "endfunction": syntax error, unexpected "endfunction", expecting "class"
+** Error: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/qclk_pkg.sv(70): near "endpackage": syntax error, unexpected "endpackage", expecting "class"
+- CleanLock Info: Successfully cleared compile lock.

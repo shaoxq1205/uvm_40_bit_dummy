@@ -69,7 +69,7 @@ R2
 !s100 4ffW^QEaj8dRIcA0LV`CK0
 Ika;1G9?;M7koJ??CCOHIR2
 VzEBQD6VE37ckQl]1P@?]42
-Z23 !s105 pcounter_sv_unit
+Z23 !s105 serdes_sv_unit
 S1
 R6
 Z24 w1489708603
@@ -104,19 +104,39 @@ r1
 R12
 R13
 R27
+vdeserializer
+R1
+R2
+!s100 nQ70b85niEgzceJNHz3;C3
+IX^_=UCR;::14RG@6Zg`kD1
+V?Pln@_icj0cQE2?QoBzjh2
+R23
+S1
+R6
+Z28 w1490751022
+Z29 8/usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/serdes.sv
+Z30 F/usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/serdes.sv
+L0 50
+R11
+r1
+!s85 0
+31
+R12
+R13
+R27
 Ydut_if
 R1
 R2
-!s100 V_Ve`Eh`3Cke[3UUYX<l>1
-ILDgiA2In=6Uh;VW49=37E2
+!s100 K77d?XTdlz0APNFG7A8JW3
+I1^cUi8?5?dSa@JiVD;QNm3
 VLl2mZ[G::>ji2LA7o6fIT2
 R23
 S1
 R6
-Z28 w1489706917
-Z29 8/usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/pcounter.sv
-Z30 F/usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/pcounter.sv
-L0 8
+R28
+R29
+R30
+L0 4
 R11
 r1
 !s85 0
@@ -145,46 +165,6 @@ R14
 Z34 ngenerate@address@and@byte@enables
 Z35 !s100 Q39?T6>z_j7C>Ln;I:18B3
 !s85 0
-vpcounter
-R1
-R2
-!s100 ZINOiLN2LOB;Qc3>e85Vo2
-I[A9zOG_EG36g:[488`hT_0
-VE[249z7>YE4hcoW5iok4R1
-R23
-S1
-R6
-R28
-R29
-R30
-L0 15
-R11
-r1
-!s85 0
-31
-R12
-R13
-R27
-vpcounter_int
-R1
-R2
-!s100 2Lm67]PRPd[UV7Ek]70_Q3
-IbM>63T7;Ek70CQlH:TClM0
-VWT7CJV_1o_;ON4Tf;I[R22
-R23
-S1
-R6
-R28
-R29
-R30
-L0 51
-R11
-r1
-!s85 0
-31
-R12
-R13
-R27
 vProgClkDriver
 R1
 R2
@@ -289,6 +269,46 @@ R13
 R14
 Z39 !s100 T5ZWRMcGcLgX443b`<RT11
 !s85 0
+vserdes
+R1
+R2
+!s100 YM3aY^idenP`M2SNDKKVZ0
+ICg[7KSSg[GSAV93VG>hOI2
+Vchb0<9bP]>hcl`ONBPLBc2
+R23
+S1
+R6
+R28
+R29
+R30
+L0 78
+R11
+r1
+!s85 0
+31
+R12
+R13
+R27
+vserializer
+R1
+R2
+!s100 GZW2M^HzPC2B17[7XaiI[0
+I_J];S@[kW_O7__YhNmL]61
+V464P?k[=OXWz0;i[T=NMM1
+R23
+S1
+R6
+R28
+R29
+R30
+L0 12
+R11
+r1
+!s85 0
+31
+R12
+R13
+R27
 vsram_rstatem
 R1
 R2
@@ -332,13 +352,13 @@ Z47 !s100 B=KzDf:YcHA9cCkZ@3ec@1
 vtest_bench
 R1
 R2
-!s100 EkZWonK@c5XR_oXd8DIhb3
-IQP?`DMHR>_IaWd1:N]ihV0
+!s100 oSX=hfX_dWd;Nzom>mWnE1
+I5e[@KY=EbgFf:03[<;>Ue3
 VEJNK5ZO7TWUP1egUA9^TR1
 R23
 S1
 R6
-w1489708758
+w1490207354
 8/usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/test_bench.sv
 F/usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/test_bench.sv
 L0 5

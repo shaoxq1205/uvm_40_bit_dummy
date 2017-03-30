@@ -35,6 +35,6 @@
 #    Children: xl_vip_hdl
 #    Source: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/compile_veloce.xml
 #--------------------------------------------------------------------------
-/usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/pcounter.sv (Language: SV)
+/usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/serdes.sv (Language: SV)
 /usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/test_bench.sv (Language: SV)
 /usr2/xiaoshao/uvm_training_labs/lab222/lab2/pcounter/src/clock_bfm.sv (Language: SV)

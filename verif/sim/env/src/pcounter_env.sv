@@ -73,8 +73,8 @@ class pcounter_env extends uvm_env;
 
   pcounter_virtual_sequencer m_pcounter_virtual_sequencer_h; ///< Pcounter Virtual Sequencer Handle
  
-  qclk_agent                  m_qclk_agent_h;
-   
+  qclk_agent                  m_agent, m_agent2; 
+  qclk_scoreboard             qclk_scb_h;   
   qclk_proxy                  m_qclk_proxy;
 
 
@@ -142,15 +142,21 @@ function void pcounter_env::build_phase(uvm_phase phase);
 
   //Create the components in the environment using the Factory
   `uvm_info( get_type_name(), "Getting qclk Agent from the Factory", UVM_HIGH );
-  m_qclk_agent_h = qclk_agent::type_id::create("m_qclk_agent_h", this);
+  
+  m_agent = qclk_agent::type_id::create("m_agent", this);
+  m_agent2 = qclk_agent::type_id::create("m_agent2", this);
 
+  //Create the components in the environment using the Factory
+  `uvm_info( get_type_name(), "Getting qclk Scoreboard from the Factory", UVM_HIGH );
+  qclk_scb_h = qclk_scoreboard::type_id::create("qclk_scb_h", this);
 
   // For the qclk_agent, we create a proxy object qclk_proxy and
   // wrap it inside a assign it to the vif container. 
   m_qclk_proxy = new ("m_qclk_proxy", "test_bench.u_clock.intf1");
+  // m_qclk_proxy2 = new ("m_qclk_proxy2", "test_bench.u_clock.intf1");
   `uvm_info( get_type_name(), "Set config object in pcounter_env", UVM_LOW );   
-  uvm_config_db#(qclk_proxy)::set (this, "m_qclk_agent_h.m_driver_h", "m_qclk_proxy", m_qclk_proxy);
-
+  uvm_config_db#(qclk_proxy)::set (this, "m_agent.m_driver_h", "m_qclk_proxy", m_qclk_proxy);
+  // uvm_config_db#(qclk_proxy)::set (this, "m_agent2.m_driver_h", "m_qclk_proxy2", m_qclk_proxy2);
 
 endfunction: build_phase
 
@@ -161,7 +167,11 @@ function void pcounter_env::connect_phase (uvm_phase phase);
   super.connect_phase(phase);
 
   `uvm_info( get_type_name(), "Setting qclk_sequencer in the sequencer list", UVM_HIGH );   
-  m_pcounter_virtual_sequencer_h.m_qclk_sequencer_h = m_qclk_agent_h.m_sequencer_h;
+  m_pcounter_virtual_sequencer_h.m_qclk_sequencer_h = m_agent.m_sequencer_h;
+
+  m_agent.agent_analysis_port.connect(qclk_scb_h.scb_in_aport);
+  m_agent2.agent_analysis_port.connect(qclk_scb_h.scb_out_aport);
+
 endfunction: connect_phase
 
 `endif

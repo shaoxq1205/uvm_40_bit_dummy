@@ -1,13 +1,13 @@
 ##############################################
 ## Auto-generated /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/0.pcounter_test_qclk_change_clock_period/modelsim/sim.do
-## Thu Mar 16 17:29:41 PDT 2017
+## Thu Mar 30 15:44:35 PDT 2017
 ##############################################
 
 ##############################################
 ## Defining all the global variables
 set qvmr_vars(SIM) "modelsim"
 set qvmr_vars(__VERBOSITY) "VERBOSE"
-set qvmr_vars(__SIM_MODE) "gui"
+set qvmr_vars(__SIM_MODE) "batch"
 set qvmr_vars(SAVE_SIM_COVERAGE_DIR) "/usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/0.pcounter_test_qclk_change_clock_period/modelsim/coverage/modelsim"
 set qvmr_vars(SAVE_SIM_COVERAGE) "1"
 set qvmr_vars(SPECMAN_COVERAGE) "0"

@@ -5,7 +5,7 @@
      xl_vip_hdl
   </REQUIRES>
   <SOURCE>
-    <FILE name = "pcounter.sv"/> 
+    <FILE name = "serdes.sv"/> 
     <FILE name = "test_bench.sv"/> 
     <FILE name = "clock_bfm.sv"/> 
   </SOURCE>

@@ -64,7 +64,9 @@ import quvm_addons_pkg::*;
 `include "qclk_agent.sv"
 `include "qclk_seq_list.sv"
 `include "qclk_proxy.sv"
-   
+`include "qclk_monitor.sv"
+`include "qclk_scoreboard.sv"
+
 endpackage: qclk_pkg
 
 `endif

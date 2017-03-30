@@ -89,19 +89,16 @@ endclass : pcounter_test_qclk_change_clock_period_vseq
 
 
 task pcounter_test_qclk_change_clock_period_vseq::body();
-repeat(8) begin
 $display("=============================================================");
-    //advance clock by 100 cycles    
   begin: set_small_value
-  
-    qclk_set_small_value_seq    clk_advance_seq_h;
-    `uvm_info (get_name(), "===================================Set Small Values==================================", UVM_HIGH);
+      qclk_set_small_value_seq    set_small_value_h;
+    `uvm_info (get_name(), "===================================Set Small Values==================================", UVM_LOW);
     
     `uvm_info (get_full_name(), "Start Advance Clock Seq for  QCLK", UVM_LOW);
-    `uvm_do_on_with(clk_advance_seq_h, p_sequencer.m_qclk_sequencer_h, { m_num_clks == 100; })
+    // `uvm_do_on_with(set_small_value_h, p_sequencer.m_qclk_sequencer_h, { m_num_clks == 100; })
+    `uvm_do_on(set_small_value_h, p_sequencer.m_qclk_sequencer_h)
     `uvm_info(get_full_name(), "Done Advance Clock seq for QCLK", UVM_LOW);
   end:  set_small_value
-end
 // $display("=============================================================");
 //     //advance clock by 100 cycles    
 //   begin: advance_clock_by_100

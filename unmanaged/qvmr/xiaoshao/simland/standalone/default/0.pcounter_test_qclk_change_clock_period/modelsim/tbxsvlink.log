@@ -77,7 +77,7 @@ Reading /afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/tcl/v
 # ** Warning: (vsim-3017) /pkg/qct/software/mentor/tbx/tbx_v2.4.3.0/questa/hdl/dump_definitions.sv(118): [TFMPC] - Too few port connections. Expected 1, found 0.
 #         Region: /tbx_internal_DumpExport_Defns_SIM/r2
 # ** Warning: (vsim-3722) /pkg/qct/software/mentor/tbx/tbx_v2.4.3.0/questa/hdl/dump_definitions.sv(118): [TFMPC] - Missing connection for port 'scemiPipeInterfaceClkInternal'.
-# Compiling /var/tmp/xiaoshao@vl-xiaoshao-gridsdcb_dpi_105695/exportwrapper.c
+# Compiling /var/tmp/xiaoshao@vl-xiaoshao-gridsdcb_dpi_5762/exportwrapper.c
 # Successfully generated DPI export object 'tbx_internal_DumpExport.so'.
 
 QuestaSim-64 sccom 6.6g compiler 2012.05 May 23 2012

@@ -44,6 +44,7 @@
 `include "qclk_item.sv"
 `include "qclk_driver.sv"
 `include "qclk_sequencer.sv"
+`include "qclk_monitor.sv"
 
 `include "uvm_macros.svh"
 import uvm_pkg::*;
@@ -67,8 +68,9 @@ class qclk_agent extends uvm_agent;
 
   qclk_driver    m_driver_h;       ///< Driver instance (required by UVM)   
   qclk_sequencer m_sequencer_h;    ///< Sequencer instance (required by UVM)
+  qclk_monitor   m_monitor_h;
 
-  uvm_analysis_port  #(qclk_item)   m_agent_analysis_port;
+  uvm_analysis_port  #(qclk_item)   agent_analysis_port;
                                     ///< Analysis port at the agent level
 
   /**
@@ -110,8 +112,7 @@ function void qclk_agent::build_phase (uvm_phase phase);
 
   // Create an analysis port for the agent
   `uvm_info(get_type_name(), "Constructing the analysis export port ",UVM_LOW )
-  m_agent_analysis_port  = new( "m_agent_analysis_port",     this );
-
+  agent_analysis_port  = new( "agent_analysis_port",     this );
 
   // Build the driver and controller
   `uvm_info(get_type_name(), "Constructing the qclk_driver", UVM_LOW )
@@ -121,6 +122,9 @@ function void qclk_agent::build_phase (uvm_phase phase);
   `uvm_info(get_type_name(), "Cconstructing the qclk sequencer",  UVM_LOW )
   m_sequencer_h          = qclk_sequencer::type_id::create( "m_sequencer_h", this );
 
+  // Create the monitor 
+  `uvm_info(get_type_name(), "Cconstructing the qclk monitor",  UVM_LOW )
+  m_monitor_h          = qclk_monitor::type_id::create( "m_monitor_h", this );
   
 endfunction: build_phase
    
@@ -134,7 +138,11 @@ function void qclk_agent::connect_phase (uvm_phase phase);
   m_driver_h.seq_item_port.connect( m_sequencer_h.seq_item_export );
 
   // Connect the driver's analysis port to the agent's analysis port
-  m_driver_h.m_analysis_port.connect( m_agent_analysis_port );   
+  //m_driver_h.drv_analysis_port.connect(agent_analysis_port );   
+
+  // Connect the monitor's analysis port to the agent's analysis port
+  m_monitor_h.mon_analysis_port.connect(agent_analysis_port);
+
 
 endfunction: connect_phase
 

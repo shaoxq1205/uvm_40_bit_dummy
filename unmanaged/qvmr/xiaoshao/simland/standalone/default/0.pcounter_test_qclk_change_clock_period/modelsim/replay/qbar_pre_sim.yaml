@@ -10,13 +10,13 @@ CPU: x86_64
 CSHEDIT: emacs
 CSHRCREAD: true
 CVS_RSH: ssh
-DBUS_SESSION_BUS_ADDRESS: 'unix:abstract=/tmp/dbus-TsaxNXTDFU,guid=514f91369f33baea4545a34858cac616'
-DIM_QBAR_INFO_FILE: /usr2/xiaoshao/.qbar_dim/.qbar_dim_info_bIjNzk/dim_info
-DISPLAY: vl-xiaoshao-gridsdcb:11.0
+DBUS_SESSION_BUS_ADDRESS: 'unix:abstract=/tmp/dbus-SZyvIDKvpw,guid=c338c4373ada5d1a0634946958dd366f'
+DIM_QBAR_INFO_FILE: /usr2/xiaoshao/.qbar_dim/.qbar_dim_info_b2hKh8/dim_info
+DISPLAY: vl-xiaoshao-gridsdcb:10.0
 ENV: /etc/bash.bashrc
 FROM_HEADER: ''
 GNOME_DESKTOP_SESSION_ID: this-is-deprecated
-GNOME_KEYRING_SOCKET: /tmp/keyring-HHElTb/socket
+GNOME_KEYRING_SOCKET: /tmp/keyring-nDJpRV/socket
 GROUP: users
 GROUPS: users vlsi phonesys vlsides ccmdm 16ff 10lp_be 10lp 7ff 7ff_be
 GTK_RC_FILES: /etc/gtk/gtkrc:/usr2/xiaoshao/.gtkrc-1.2-gnome2
@@ -27,7 +27,7 @@ HOME: /usr2/xiaoshao
 HOME_0IN: /pkg/qct/software/mentor/0-in//linux_x86_64
 HOST: vl-xiaoshao-gridsdcb
 HOSTNAME: vl-xiaoshao-gridsdcb.qualcomm.com
-HOSTTYPE: x86_64-linux
+HOSTTYPE: x86_64
 ICAROOT: /pkg/wts/qct/bin
 ICEAUTHORITY: /usr2/xiaoshao/.ICEauthority
 INCISIV_VERSION: incisiv11.10.018
@@ -49,11 +49,11 @@ LESS_ADVANCED_PREPROCESSOR: no
 LIB: /prj/vlsi/tools/libraries
 LOGNAME: xiaoshao
 LS_OPTIONS: -N --color=tty -T 0
-MACHTYPE: x86_64
+MACHTYPE: x86_64-suse-linux
 MAGIC_PATH: /usr/local/projects/qct/clearcase/scripts/magic_files/qct-san
 MAIL: /var/mail/xiaoshao
 MAKE: make
-MAKEFLAGS: 'L -- _QBAR_LOCK_INFO=/tmp/.qbar_info_0EaCuiL/lock.104032 SIM_MODE=gui WAVES=fsdb WAVES_DUMP_ON=1 WAVES_FSDB_DUMP_MDA=1'
+MAKEFLAGS: 'L -- _QBAR_LOCK_INFO=/tmp/.qbar_info_ur5Jrqx/lock.4824 WAVES=fsdb WAVES_DUMP_ON=1 WAVES_FSDB_DUMP_MDA=1'
 MAKELEVEL: 1
 MAKEOVERRIDES: '${-*-command-variables-*-}'
 MAKEPARSER_KEEP_LOG: 1
@@ -87,15 +87,14 @@ QVMR_HOME: /pkg/qvmr/2.10.2
 QVMR_VERSION: 2.10.2
 SAVE_SIM_COVERAGE: 1
 SAVE_SIM_COVERAGE_DIR: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/0.pcounter_test_qclk_change_clock_period/modelsim/coverage/modelsim
-SESSION_MANAGER: 'local/vl-xiaoshao-gridsdcb:@/tmp/.ICE-unix/16364,unix/vl-xiaoshao-gridsdcb:/tmp/.ICE-unix/16364'
+SESSION_MANAGER: 'local/vl-xiaoshao-gridsdcb:@/tmp/.ICE-unix/18316,unix/vl-xiaoshao-gridsdcb:/tmp/.ICE-unix/18316'
 SHELL: /bin/tcsh
 SHELL_TYPE: C
-SHLVL: 4
+SHLVL: 3
 SIM: modelsim
-SIM_MODE: gui
-SSH_AUTH_SOCK: /tmp/keyring-HHElTb/socket.ssh
-SSH_CLIENT: 10.23.92.12 56896 22
-SSH_CONNECTION: 10.23.92.12 56896 10.56.123.27 22
+SSH_AUTH_SOCK: /tmp/keyring-nDJpRV/socket.ssh
+SSH_CLIENT: 10.23.92.18 33824 22
+SSH_CONNECTION: 10.23.92.18 33824 10.56.123.27 22
 SUBSCRIPTIONS: qct_clearcase
 SVA_COVERAGE: 1
 TBX_HOME: /pkg/qct/software/mentor/tbx/tbx_v2.4.3.0
@@ -126,9 +125,9 @@ XL_VIP_VERSION: xl_vip2.4.0.2b
 XNLSPATH: /usr/share/X11/nls
 ZIN_VERSION: ''
 _: /pkg/qvmr/2.10.2/qbar/scripts/internal/gen_replay_vanila.pl
-_QBAR_LOCK_INFO: /tmp/.qbar_info_0EaCuiL/lock.104032
+_QBAR_LOCK_INFO: /tmp/.qbar_info_ur5Jrqx/lock.4824
 _QBAR_MODE: standalone
-__QBAR_SESSION_DATA: ' ****************************************************\n * SESSION INFO\n ****************************************************\n * QVMR: 2.10.2\n * Flow: tbx\n * Goals: sim\n * Flags: SIM_MODE=gui WAVES=fsdb WAVES_DUMP_ON=1 WAVES_FSDB_DUMP_MDA=1\n * Platform: LINUX64\n * Host: vl-xiaoshao-gridsdcb\n * Process ID: 104077\n * Makefile: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr/Makefile\n * Session started: Thu Mar 16 17:29:17 PDT 2017\n * Host Uptime:  17:29pm  up 13 days  5:18,  2 users,  load average: 0.14, 0.14, 0.19\n ****************************************************\n * TOOL INFO\n ****************************************************\n * Modelsim: 6.6g ($MODELTECH_VERSION)\n * Novas: 2012.07 ($NOVAS_VERSION)\n * DVT: 3.0.6.1 (DEFAULT)\n ****************************************************\n \n[qbar.mk] Warning: DVT_VERSION environment variable definition detected from improper origin: undefined.  DVT_VERSION should be defined in the environment prior to invoking qbar.\n\n ****************************************************\n'
+__QBAR_SESSION_DATA: ' ****************************************************\n * SESSION INFO\n ****************************************************\n * QVMR: 2.10.2\n * Flow: tbx\n * Goals: sim\n * Flags: WAVES=fsdb WAVES_DUMP_ON=1 WAVES_FSDB_DUMP_MDA=1\n * Platform: LINUX64\n * Host: vl-xiaoshao-gridsdcb\n * Process ID: 4869\n * Makefile: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr/Makefile\n * Session started: Thu Mar 30 15:44:19 PDT 2017\n * Host Uptime:  15:44pm  up 27 days  3:33,  3 users,  load average: 0.20, 0.29, 0.23\n ****************************************************\n * TOOL INFO\n ****************************************************\n * Modelsim: 6.6g ($MODELTECH_VERSION)\n * Novas: 2012.07 ($NOVAS_VERSION)\n * DVT: 3.0.6.1 (DEFAULT)\n ****************************************************\n \n[qbar.mk] Warning: DVT_VERSION environment variable definition detected from improper origin: undefined.  DVT_VERSION should be defined in the environment prior to invoking qbar.\n\n ****************************************************\n'
 __QVMR_TESTCASE_TYPE: ovm_or_uvm
-defaultpath_104032: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr:/usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim
+defaultpath_4824: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr:/usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim
 unmanaged: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged

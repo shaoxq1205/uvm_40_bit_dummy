@@ -55,6 +55,7 @@ ${XL_VIP_HOME}/xl_vip/lib/XlSvEdgeDetectorPkg.sv (Language: SV)
 #    Source: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/compile.xml
 #--------------------------------------------------------------------------
 /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/qclk_pkg.sv (Language: SV)
+/usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/qclk_if.sv (Language: SV)
 
 #--------------------------------------------------------------------------
 # CompileSpec: uvc_pcounter

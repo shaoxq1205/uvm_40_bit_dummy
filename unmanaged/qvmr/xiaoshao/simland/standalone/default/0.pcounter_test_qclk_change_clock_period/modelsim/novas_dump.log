@@ -7,7 +7,7 @@ Limit information:
 cputime			unlimited
 filesize		unlimited
 datasize		unlimited
-stacksize		unlimited
+stacksize		8192 kbytes
 coredumpsize	1 kbytes
 memoryuse		6842752 kbytes
 vmemoryuse		7279120 kbytes
@@ -33,20 +33,18 @@ NOVAS_HOME=/pkg/qct/software/novas/2012.07
 SVA_COVERAGE=1
 TERM=xterm
 MATLABPATH=/pkg/qcaetools/syseng
-__QBAR_SESSION_DATA= ****************************************************\n * SESSION INFO\n ****************************************************\n * QVMR: 2.10.2\n * Flow: tbx\n * Goals: sim\n * Flags: SIM_MODE=gui WAVES=fsdb WAVES_DUMP_ON=1 WAVES_FSDB_DUMP_MDA=1\n * Platform: LINUX64\n * Host: vl-xiaoshao-gridsdcb\n * Process ID: 104077\n * Makefile: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr/Makefile\n * Session started: Thu Mar 16 17:29:17 PDT 2017\n * Host Uptime:  17:29pm  up 13 days  5:18,  2 users,  load average: 0.14, 0.14, 0.19\n ****************************************************\n * TOOL INFO\n ****************************************************\n * Modelsim: 6.6g ($MODELTECH_VERSION)\n * Novas: 2012.07 ($NOVAS_VERSION)\n * DVT: 3.0.6.1 (DEFAULT)\n ****************************************************\n \n[qbar.mk] Warning: DVT_VERSION environment variable definition detected from improper origin: undefined.  DVT_VERSION should be defined in the environment prior to invoking qbar.\n\n ****************************************************\n
+__QBAR_SESSION_DATA= ****************************************************\n * SESSION INFO\n ****************************************************\n * QVMR: 2.10.2\n * Flow: tbx\n * Goals: sim\n * Flags: WAVES=fsdb WAVES_DUMP_ON=1 WAVES_FSDB_DUMP_MDA=1\n * Platform: LINUX64\n * Host: vl-xiaoshao-gridsdcb\n * Process ID: 4869\n * Makefile: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr/Makefile\n * Session started: Thu Mar 30 15:44:19 PDT 2017\n * Host Uptime:  15:44pm  up 27 days  3:33,  3 users,  load average: 0.20, 0.29, 0.23\n ****************************************************\n * TOOL INFO\n ****************************************************\n * Modelsim: 6.6g ($MODELTECH_VERSION)\n * Novas: 2012.07 ($NOVAS_VERSION)\n * DVT: 3.0.6.1 (DEFAULT)\n ****************************************************\n \n[qbar.mk] Warning: DVT_VERSION environment variable definition detected from improper origin: undefined.  DVT_VERSION should be defined in the environment prior to invoking qbar.\n\n ****************************************************\n
 SHELL=/bin/sh
 XL_VIP_HOME=/usr/local/projects/qct/evals/veloce/software/iSolveTransactors/xl_vip2.4.0.2b
 HOST=vl-xiaoshao-gridsdcb
-MAKEFLAGS=L -- _QBAR_LOCK_INFO=/tmp/.qbar_info_0EaCuiL/lock.104032 SIM_MODE=gui WAVES=fsdb WAVES_DUMP_ON=1 WAVES_FSDB_DUMP_MDA=1
-SSH_CLIENT=10.23.92.12 56896 22
+MAKEFLAGS=L -- _QBAR_LOCK_INFO=/tmp/.qbar_info_ur5Jrqx/lock.4824 WAVES=fsdb WAVES_DUMP_ON=1 WAVES_FSDB_DUMP_MDA=1
+SSH_CLIENT=10.23.92.18 33824 22
 DESIGNWARE_HOME=/pkg/qct/verif/synopsys/dw_home
-SIM_MODE=gui
 GTK_RC_FILES=/etc/gtk/gtkrc:/usr2/xiaoshao/.gtkrc-1.2-gnome2
 _QBAR_MODE=standalone
 MORE=-sl
 WINDOWID=27262980
 QT_HOME_DIR=/usr/share/desktop-data
-defaultpath_104032=/usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr:/usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim
 VERA_HOME=/pkg/qct/software/synopsys/vera/Z-2006.12-16/home
 GV2_ENV=sourced
 WORKSPACE=/usr2/xiaoshao/uvm_training_labs/lab222/lab2
@@ -68,18 +66,19 @@ ENV=/etc/bash.bashrc
 SHELL_TYPE=C
 WAVES_DUMP_ON=1
 LIB=/prj/vlsi/tools/libraries
-GNOME_KEYRING_SOCKET=/tmp/keyring-HHElTb/socket
+GNOME_KEYRING_SOCKET=/tmp/keyring-nDJpRV/socket
 WAVES_FSDB_DUMP_MDA=1
-HOSTTYPE=x86_64-linux
-SSH_AUTH_SOCK=/tmp/keyring-HHElTb/socket.ssh
+HOSTTYPE=x86_64
+SSH_AUTH_SOCK=/tmp/keyring-nDJpRV/socket.ssh
 NOVAS_FSDB_ALL=1
 FROM_HEADER=
-SESSION_MANAGER=local/vl-xiaoshao-gridsdcb:@/tmp/.ICE-unix/16364,unix/vl-xiaoshao-gridsdcb:/tmp/.ICE-unix/16364
+SESSION_MANAGER=local/vl-xiaoshao-gridsdcb:@/tmp/.ICE-unix/18316,unix/vl-xiaoshao-gridsdcb:/tmp/.ICE-unix/18316
 MAKELEVEL=1
 PAGER=less
 MFLAGS=-L
-_QBAR_LOCK_INFO=/tmp/.qbar_info_0EaCuiL/lock.104032
+_QBAR_LOCK_INFO=/tmp/.qbar_info_ur5Jrqx/lock.4824
 CSHEDIT=emacs
+defaultpath_4824=/usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/tool_setup/qvmr:/usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim
 XDG_CONFIG_DIRS=/etc/xdg
 QAFFEE_DEFAULT_INVOCATION=standalone
 MINICOM=-c on
@@ -107,7 +106,7 @@ VM_ROOT=/pkg/qct/software/cadence/incisiv11.10.018
 TBX_HOME=/pkg/qct/software/mentor/tbx/tbx_v2.4.3.0
 SAVE_SIM_COVERAGE_DIR=/usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/0.pcounter_test_qclk_change_clock_period/modelsim/coverage/modelsim
 CCASE_MAKE_COMPAT=gnu
-LM_LICENSE_FILE=1783@license-wan-26-sd:5280@license-wan-16-sd:5280@license-wan-11-sd:5280@license-wan-10-sd:5280@license-wan-1-encnaa:27600@license-wan-12-sd:27600@license-wan-13-sd:27600@license-wan-28-sd:27600@license-wan-17-sd:27600@license-wan-18-sd:27600@license-wan-26-sd:27600@license-wan-27-sd:1717@license-wan-13-sd:1717@license-wan-16-sd:1717@license-wan-12-sd:1717@license-wan-11-sd:1717@license-wan-15-sd:1717@license-wan-1-blr:27600@license-wan-21-sd:27600@license-wan-20-sd:27600@license-wan-22-sd:27600@license-wan-3-scl:27600@license-wan-1-aus:27600@license-wan-1-encnaa:27600@license-wan-4-encnaa:27600@license-wan-2-encnaa:27600@license-wan-3-encnaa:27600@license-wan-1-blr:27600@license-wan-25-sd:27600@license-wan-14-sd:27600@license-wan-24-sd:27600@license-wan-16-sd:27600@license-wan-11-sd:27600@license-wan-23-sd
+LM_LICENSE_FILE=1783@license-wan-26-sd:5280@license-wan-16-sd:5280@license-wan-11-sd:5280@license-wan-10-sd:5280@license-wan-1-encnaa:27600@license-wan-28-sd:27600@license-wan-26-sd:27600@license-wan-12-sd:27600@license-wan-17-sd:27600@license-wan-27-sd:27600@license-wan-13-sd:27600@license-wan-18-sd:1717@license-wan-13-sd:1717@license-wan-16-sd:1717@license-wan-12-sd:1717@license-wan-11-sd:1717@license-wan-15-sd:1717@license-wan-1-blr:27600@license-wan-21-sd:27600@license-wan-20-sd:27600@license-wan-22-sd:27600@license-wan-3-scl:27600@license-wan-1-aus:27600@license-wan-1-encnaa:27600@license-wan-3-encnaa:27600@license-wan-2-encnaa:27600@license-wan-4-encnaa:27600@license-wan-1-blr:27600@license-wan-25-sd:27600@license-wan-11-sd:27600@license-wan-16-sd:27600@license-wan-24-sd:27600@license-wan-14-sd:27600@license-wan-23-sd
 DENALI=/pkg/qct/software/denali/3.2.050/amd64
 CLEARCASE_MKELEM_USE_GRPLIST=true
 CODE_COVERAGE=1
@@ -115,7 +114,7 @@ NOVAS_VERSION=2012.07
 ICEAUTHORITY=/usr2/xiaoshao/.ICEauthority
 HOME=/usr2/xiaoshao
 ICAROOT=/pkg/wts/qct/bin
-SHLVL=4
+SHLVL=3
 SIM=modelsim
 HOME_0IN=/pkg/qct/software/mentor/0-in//linux_x86_64
 TECHDIR=/prj/vlsi/tools/tech
@@ -134,14 +133,14 @@ ZIN_VERSION=
 VENDOR=unknown
 WAVES_FSDB_DUMP_SVA=0
 WAVES=fsdb
-MACHTYPE=x86_64
+MACHTYPE=x86_64-suse-linux
 LOGNAME=xiaoshao
 G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-1,CP1252
 LESS=-M -I
 CVS_RSH=ssh
-SSH_CONNECTION=10.23.92.12 56896 10.56.123.27 22
+SSH_CONNECTION=10.23.92.18 33824 10.56.123.27 22
 XDG_DATA_DIRS=/usr/local/share:/usr/share:/etc/opt/kde3/share:/opt/kde3/share:/usr/share/gnome
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-TsaxNXTDFU,guid=514f91369f33baea4545a34858cac616
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-SZyvIDKvpw,guid=c338c4373ada5d1a0634946958dd366f
 MOZILLA_HOME=/pkg/netscape/bin
 MED_COMMON_LLSW_FILES=/pkg/qct/software/mentor/veloce/Veloce_v1.5.0.19/TnD
 TBX_VERSION=tbx_v2.4.3.0
@@ -153,9 +152,9 @@ DW_LICENSE_OVERRIDE=DesignWare-Regression
 MAKEPARSER_KEEP_LOG=1
 MODELTECH_VERSION=6.6g
 SUBSCRIPTIONS=qct_clearcase
-DISPLAY=vl-xiaoshao-gridsdcb:11.0
+DISPLAY=vl-xiaoshao-gridsdcb:10.0
 XAUTHLOCALHOSTNAME=vl-xiaoshao-gridsdcb
-DIM_QBAR_INFO_FILE=/usr2/xiaoshao/.qbar_dim/.qbar_dim_info_bIjNzk/dim_info
+DIM_QBAR_INFO_FILE=/usr2/xiaoshao/.qbar_dim/.qbar_dim_info_b2hKh8/dim_info
 LESSCLOSE=lessclose.sh %s %s
 G_BROKEN_FILENAMES=1
 QBAR_HOME=/pkg/qvmr/2.10.2/qbar
@@ -170,8 +169,6 @@ ITCL_LIBRARY=/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/
 ITK_LIBRARY=/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/linux_x86_64/../tcl/itk3.0
 VSIM_LIBRARY=/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/linux_x86_64/../tcl/vsim
 MODELSIM=modelsim.ini
-TCL_PRINTER_CONFFILE=/usr2/xiaoshao/.hte/v2_77/.hte.ini
-ENSCRIPT_LIBRARY=/usr/share/enscript
 TIX_LIBRARY=/afs/localcell/cm/GV2/sysname/pkg.@sys/qct/software/modeltech/6.6g/linux_x86_64/../tcl/tix
 Runtime command line arguments:
 argv[0]=LoadDesign
@@ -183,36 +180,75 @@ argv[5]=-L
 argv[6]=tb_work
 argv[7]=-assertdebug
 argv[8]=-coverage
-argv[9]=-l
-argv[10]=./sim_gui.log
+argv[9]=-do
+argv[10]=sim.do
 argv[11]=-lib
 argv[12]=tb_work
 argv[13]=-permit_unmatched_virtual_intf
-argv[14]=-gui
-argv[15]=-onfinish
-argv[16]=stop
-argv[17]=-pli
-argv[18]=/pkg/qct/software/novas/2012.07/share/PLI/MODELSIM/LINUX64/novas_fli.so
-argv[19]=-sclib
-argv[20]=tb_work
-argv[21]=-sv_seed
-argv[22]=1
-argv[23]=-t
-argv[24]=ns
-argv[25]=-sv_root
-argv[26]=/usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/misc/LINUX64/6.6g
-argv[27]=-sv_lib
-argv[28]=dpi_lib
-argv[29]=hdl_work.test_bench
-argv[30]=tb_work.tb_top
-argv[31]=tb_work.novas
-argv[32]=tb_work.TbxSvManager
-210 profile - 100
-          CPU/Mem usage: 0.000 sys,  0.000 user,  257.06M sys,  0.00M vm
-211 VC callback profile - scalar:0 vector:0
-212 Thu Mar 16 17:29:50 2017
-213 pliAppInit
-214 ndpGetenv(FSDB_ALL): 1
-215 pliAppMiscSet: New Sim Round
-216 LIBSSCORE=found /pkg/qct/software/novas/2012.07/share/PLI/MODELSIM/LINUX64/libsscore_mti66.so through $LD_LIBRARY_PATH setting.
-217 Sim process exit
+argv[14]=-c
+argv[15]=-pli
+argv[16]=/pkg/qct/software/novas/2012.07/share/PLI/MODELSIM/LINUX64/novas_fli.so
+argv[17]=-sclib
+argv[18]=tb_work
+argv[19]=-sv_seed
+argv[20]=1
+argv[21]=-t
+argv[22]=ns
+argv[23]=-sv_root
+argv[24]=/usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/misc/LINUX64/6.6g
+argv[25]=-sv_lib
+argv[26]=dpi_lib
+argv[27]=hdl_work.test_bench
+argv[28]=tb_work.tb_top
+argv[29]=tb_work.novas
+argv[30]=tb_work.TbxSvManager
+205 profile - 100
+          CPU/Mem usage: 0.000 sys,  0.000 user,  256.34M sys,  0.00M vm
+206 VC callback profile - scalar:0 vector:0
+207 Thu Mar 30 15:44:41 2017
+208 pliAppInit
+209 ndpGetenv(FSDB_ALL): 1
+210 pliAppMiscSet: New Sim Round
+211 LIBSSCORE=found /pkg/qct/software/novas/2012.07/share/PLI/MODELSIM/LINUX64/libsscore_mti66.so through $LD_LIBRARY_PATH setting.
+212 Novas FSDB Dumper for ModelSim, Release 2012.07, Linux x86_64/64bit, 07/11/2012
+213 Copyright (C) 1996 - 2012 by SpringSoft, Inc.
+214 sps_tcl_fsdbDumpfile
+215 argv[0]: /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/0.pcounter_test_qclk_change_clock_period/modelsim/sim.fsdb
+216 *Novas* FSDB WARNING: The FSDB file already exists.Overwriting the FSDB file may crash the programs that are using this file.
+217 *Novas* : Create FSDB file '/usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/0.pcounter_test_qclk_change_clock_period/modelsim/sim.fsdb'
+218 sps_tcl_fsdbDumpvars
+219 argv[0]: 0
+220 argv[1]: /
+221 argv[2]: +all
+222 *Novas* : Begin traversing the scope (/), layer (0).
+223 *Novas* : Enable +all dumping.
+224 *Novas* : End of traversing.
+225 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.050 sys,  0.760 user,  284.99M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  2.08M sys,  0.00M vm
+                   accu: 0.000 sys,  0.000 user,  2.08M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  2.08M sys,  0.00M vm
+
+          Count usage: 115 var,  101 idcode,  101 callback
+                 incr: 115 var,  101 idcode,  101 callback
+                 accu: 115 var,  101 idcode,  101 callback
+            accu incr: 115 var,  101 idcode,  101 callback
+226 VC callback profile - scalar:0 vector:0
+227 Thu Mar 30 15:44:48 2017
+228 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.050 sys,  0.760 user,  286.04M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+                   accu: 0.000 sys,  0.000 user,  3.13M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+
+          Count usage: 115 var,  101 idcode,  101 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 115 var,  101 idcode,  101 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+229 VC callback profile - scalar:56 vector:44
+230 Thu Mar 30 15:44:48 2017
+231 End of simulation at 4245
+232 VC callback profile - scalar:13982 vector:3288
+233 Thu Mar 30 15:44:51 2017
+234 SimExit
+235 Sim process exit

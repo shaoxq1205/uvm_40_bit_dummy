@@ -39,14 +39,46 @@ module tb_top;
 
   pcounter_env env_h;
   dut_if dut_if1();
+  // Input interface
+  qclk_if in_if(
+    .clk(dut_if1.clk),
+    .rst(dut_if1.rst)
+  );
+  assign in_if.mon_rdy = in_if.rdy;
+  assign in_if.mon_data = in_if.data;
+
+
+  // assign in_if.mon_rdy = in_if.rdy;
+  // assign in_if.mon_data = in_if.data;
+
+
+  // Output interface
+  qclk_if out_if(
+    .clk(dut_if1.clk),
+    .rst(dut_if1.rst)
+  );
   
 //Test added by Xiaoqiang 
-  pcounter dut(
+  serdes dut(
       .clk(dut_if1.clk),
       .rst(dut_if1.rst),
-      .data_in(dut_if1.data_in),
-      .data_out(dut_if1.data_out)
+      .data_in(in_if.mon_data),
+      .data_out(out_if.mon_data),
+      .Sercnt    (dut_if1.Sercnt),
+      .Descnt    (dut_if1.Descnt),
+      .serialdata(dut_if1.serialdata),
+      .data_rdy   (in_if.mon_rdy),
+      .data_finish(out_if.mon_rdy),
+      .intervalue (dut_if1.intervalue),
+      .serial_rdy (dut_if1.serial_rdy)
       );
+initial begin
+  dut_if1.rst = 0;
+  #1 dut_if1.rst = 1;
+  #10 dut_if1.rst = 0;
+  #10;
+  
+end
 
 initial begin
   dut_if1.clk = 0;
@@ -58,10 +90,11 @@ end
 
 //Test added by Xiaoqiang
 // Place the interface into the UVM configuration database
-   uvm_config_db#(virtual dut_if)::set(null, "*", "dut_vif", dut_if1);
-    
+   uvm_config_db#(virtual qclk_if)::set(uvm_root::get(), "*.m_agent.*", "qclk_if", in_if); //
+   uvm_config_db#(virtual qclk_if)::set(uvm_root::get(), "*.m_agent2.*", "qclk_if", out_if);
     // Create the env and Run the test
-    env_h = pcounter_env::type_id::create("env_h", null);
+
+    //env_h = pcounter_env::type_id::create("env_h", null);
     run_test();
 
   end

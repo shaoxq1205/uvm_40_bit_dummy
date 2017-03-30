@@ -65,7 +65,7 @@ import qclk_pkg::*;
 class pcounter_virtual_sequencer extends uvm_sequencer #(uvm_sequence_item);
   `uvm_component_utils(pcounter_virtual_sequencer)
 
-  qclk_sequencer                       m_qclk_sequencer_h;       ///< qclk sequencer
+  qclk_sequencer                      m_qclk_sequencer_h;       ///< qclk sequencer
 
   /**
    * @brief Constructor

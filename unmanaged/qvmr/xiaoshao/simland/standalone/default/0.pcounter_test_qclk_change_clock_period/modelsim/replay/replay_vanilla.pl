@@ -29,7 +29,7 @@ my $qbar_env =
 ###
 #my $sim_dir = ".";
 
-my $run_cmd = q{/pkg/qvmr/bin/Vsim -qc_standalone    -permit_unmatched_virtual_intf -cpppath /pkg/modeltech/6.6g/gcc-4.1.2-linux_x86_64/bin/gcc -t ns   -sclib tb_work -lib tb_work -L hdl_work -L tb_work -gui -onfinish stop -l ./sim_gui.log -coverage -assertdebug -pli /pkg/qct/software/novas/2012.07/share/PLI/MODELSIM/LINUX64/novas_fli.so -vsim -sv_seed 1   -sv_root /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/misc/LINUX64/6.6g -sv_lib dpi_lib  +UVM_TESTNAME=pcounter_test_qclk_change_clock_period +UVM_USE_OVM_RUN_SEMANTIC  hdl_work.test_bench tb_work.tb_top tb_work.novas tb_work.TbxSvManager};
+my $run_cmd = q{/pkg/qvmr/bin/Vsim -qc_standalone    -permit_unmatched_virtual_intf -cpppath /pkg/modeltech/6.6g/gcc-4.1.2-linux_x86_64/bin/gcc -t ns   -sclib tb_work -lib tb_work -L hdl_work -L tb_work -c -do sim.do -coverage -assertdebug -pli /pkg/qct/software/novas/2012.07/share/PLI/MODELSIM/LINUX64/novas_fli.so -sv_seed 1   -sv_root /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/simland/standalone/default/misc/LINUX64/6.6g -sv_lib dpi_lib  +UVM_TESTNAME=pcounter_test_qclk_change_clock_period +UVM_USE_OVM_RUN_SEMANTIC  hdl_work.test_bench tb_work.tb_top tb_work.novas tb_work.TbxSvManager};
 $run_cmd .=
   join( ' ', $g_opt{-sim_opts}, '2>&1 | tee replay_vanilla.session.log' );
 

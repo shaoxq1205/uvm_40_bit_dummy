@@ -208,7 +208,9 @@ __TB_QAFENE_DEPS[uvc_qclk] += ${__TB_QAFENE_REQUIRES[uvc_qclk]}
 __TB_SPEC_FILES[uvc_qclk] += /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/compile.xml
 __TB_FILELISTS[uvc_qclk] += /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/libs/default/tb/modelsim/6.6g/LINUX64/uvc_qclk_hier_tb_sv.f
 __TB_SOURCE_FILES[uvc_qclk] += /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/qclk_pkg.sv
+__TB_SOURCE_FILES[uvc_qclk] += /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/qclk_if.sv
 __TB_SOURCE_FILES[uvc_qclk][1] += /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/qclk_pkg.sv
+__TB_SOURCE_FILES[uvc_qclk][1] += /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/qclk_if.sv
 __TB_FILELISTS[uvc_qclk][1] += /usr2/xiaoshao/uvm_training_labs/lab222/lab2/unmanaged/qvmr/xiaoshao/libs/default/tb/modelsim/6.6g/LINUX64/uvc_qclk_hier_tb_sv.f
 __TB_QAFENE_DEPS[uvc_qclk][1] += ${__TB_DEPS}
 __TB_QAFENE_DEPS[uvc_qclk][1] += $${TB_DEPS}
@@ -690,7 +692,7 @@ ${__HVL_QAFENE_TARGET[uvc_qclk][1]} : \
 	    +incdir+/usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/. \
 	    +incdir+/usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/../sequence_lib/src \
 	    +incdir+/usr/local/projects/qct/evals/veloce/software/iSolveTransactors/xl_vip2.4.0.2b/xl_vip/lib \
-	     `if [ -e ${__TB_BIN_DIR}//usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/qclk_pkg.sv.recompile ]; then echo /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/qclk_pkg.sv.recompile; else echo /usr2/xiaoshao/uvm_training_labs/lab222/lab2/verif/sim/env/agents/qclk/env/src/qclk_pkg.sv; fi` \
+	    -f `if [ -e ${__TB_BIN_DIR}/./uvc_qclk_hier_tb_sv.f.recompile ]; then echo ./uvc_qclk_hier_tb_sv.f.recompile; else echo ./uvc_qclk_hier_tb_sv.f; fi` \
 	    -work tb_work \
 	    ${__OVERRIDE_UVC_QCLK_VLOG_OPTS} ${__UVC_QCLK_VLOG_CMD_TRAIL} ${__UVC_QCLK_VLOG_SV_CMD_TRAIL}, \
 	  ${__TB_LOG}, \
